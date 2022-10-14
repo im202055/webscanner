@@ -79,7 +79,7 @@ window.addEventListener('load', async function()
   '192.168.254.254',
   //'200.200.200.5',
 ]
-  let scan = await webScanAll(
+  let scan = webScanAll(
     ipsToScan, // array. if undefined, scan major subnet gateways, then scan live subnets. supports wildcards
     {
       rtc: true,   // use webrtc to detect local ips
